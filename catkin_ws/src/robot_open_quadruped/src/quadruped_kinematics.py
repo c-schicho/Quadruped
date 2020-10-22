@@ -135,57 +135,51 @@ class LegIK:
 
 
 
-    def get_joint_angles(self, x, y, z):
+    def get_joint_angles(self, leg_vectors):
         joint_angles = []
-       # for i in range(4):
         try:
-            # Y-Axis
-            y += self.off1
-            h2 = math.sqrt(z**2 +y**2)
-            h3 = math.sqrt(self.off0**2 + self.off1**2)
-            b0 = math.atan(y / z)
-            b1 = math.atan(self.off1 / self.off0)
-            b2 = math.atan(self.off0 / self.off1)
-            b3 = math.asin((h3 * math.sin(b2 + math.radians(90))) / h2)
-            b4 = math.radians(90) - (b2 + b3)
-            b5 = b1 - b4
-            a0 = b0 - b5 # hip angle
-            b6 = 90 - (b1 - a0)
-            b7 = 90 - b6
-            b8 = 90 - (b6 + b7)
-            off2 = h3 * math.cos(b7)
-            z1 = (h3 * math.sin(b4) / math.sin(b3))
-            z2 = ((z - off2) / math.cos(b8))
+            for i, (x, y, z) in enumerate(leg_vectors): 
+                # Y-Axis
+                y += self.off1
+                h2 = math.sqrt(z**2 +y**2)
+                h3 = math.sqrt(self.off0**2 + self.off1**2)
+                b0 = math.atan(y / z)
+                b1 = math.atan(self.off1 / self.off0)
+                b2 = math.atan(self.off0 / self.off1)
+                b3 = math.asin((h3 * math.sin(b2 + math.radians(90))) / h2)
+                b4 = math.radians(90) - (b2 + b3)
+                b5 = b1 - b4
+                a0 = b0 - b5 # hip angle
+                b6 = 90 - (b1 - a0)
+                b7 = 90 - b6
+                b8 = 90 - (b6 + b7)
+                off2 = h3 * math.cos(b7)
+                z1 = (h3 * math.sin(b4) / math.sin(b3))
+                z2 = ((z - off2) / math.cos(b8))
 
-            if y < 0:
-                # right side
-                a1, a2 = self.get_leg_angles(x, z1)
-                for i in range(2):
-                    joint_angles.append([a0, a1, a2])
+                if y < 0:
+                    # right side
+                    a1, a2 = self.get_leg_angles(x, z1)
+                    if i == 0 or i == 1:
+                        joint_angles.append([a0, a1, a2])
 
-                # left side
-                a1, a2 = self.get_leg_angles(x, z2)
-                for i in range(2):
-                    joint_angles.append([a0, a1, a2])
+                    # left side
+                    a1, a2 = self.get_leg_angles(x, z2)
+                    if i == 2 or i == 3:
+                        joint_angles.append([a0, a1, a2])
 
-            else:
-                # right side
-                a1, a2 = self.get_leg_angles(x, z2)
-                for i in range(2):
-                    joint_angles.append([a0, a1, a2])
+                else:
+                    # right side
+                    a1, a2 = self.get_leg_angles(x, z2)
+                    if i == 0 or i == 1:
+                        joint_angles.append([a0, a1, a2])
 
-                # left side
-                a1, a2 = self.get_leg_angles(x, z1)
-                for i in range(2):
-                    joint_angles.append([a0, a1, a2])
+                    # left side
+                    a1, a2 = self.get_leg_angles(x, z1)
+                    if i == 2 or i == 3:
+                        joint_angles.append([a0, a1, a2])
 
         except:
             pass
 
         return joint_angles
-
-
-
-#if __name__ == "__main__":
-#    leg = LegIK(109.868, 144.580, 11.369, 63.763)
-#    print(leg.get_joint_angles(0,0,150))
