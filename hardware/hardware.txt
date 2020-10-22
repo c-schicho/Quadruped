@@ -1,0 +1,7 @@
+These are the used components for this project:
+
+- Nvidia Jetson Nano
+- Waveshare AC8265 Wireless NIC
+- Ada-fruit PCA9685 16 Channel 12 Bit PWM Servo Driver
+- QLOUNI LM2596 DC to DC Buck converter
+- Digital Servo Motors
