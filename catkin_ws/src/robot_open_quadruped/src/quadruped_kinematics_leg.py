@@ -32,6 +32,13 @@ class LegIK:
             b5 = b1 - b4
             z1 = (h2 * math.sin(b4) / math.sin(b3))
             a0 = b0 - b5 # hip angle
+<<<<<<< HEAD
+=======
+            b6 = 90 - (b1 - a0)
+            b7 = 90 - b6
+            b8 = 90 - (b6 + b7)
+            off2 = h3
+>>>>>>> c067ceb84ff4a006e0447aa374a1d6f2bbef8c18
 
             # X-Axis
             h3 = math.sqrt(x**2 + z1**2)
