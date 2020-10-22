@@ -1,0 +1,79 @@
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
+\contentsline {paragraph}{}{2}{section*.2}%
+\contentsline {subsection}{\numberline {1.1}Purpose}{2}{subsection.1.1}%
+\contentsline {paragraph}{}{2}{section*.3}%
+\contentsline {section}{\numberline {2}3 DOF Leg Inverse Kinematics}{2}{section.2}%
+\contentsline {paragraph}{}{2}{section*.4}%
+\contentsline {paragraph}{}{2}{section*.5}%
+\contentsline {subsection}{\numberline {2.1}Z-Axis}{3}{subsection.2.1}%
+\contentsline {paragraph}{}{3}{section*.6}%
+\contentsline {paragraph}{}{3}{section*.7}%
+\contentsline {paragraph}{}{3}{section*.8}%
+\contentsline {paragraph}{}{3}{section*.9}%
+\contentsline {paragraph}{}{3}{section*.10}%
+\contentsline {paragraph}{}{4}{section*.11}%
+\contentsline {paragraph}{}{4}{section*.12}%
+\contentsline {paragraph}{}{4}{section*.13}%
+\contentsline {paragraph}{}{4}{section*.14}%
+\contentsline {subsection}{\numberline {2.2}X-Axis}{5}{subsection.2.2}%
+\contentsline {paragraph}{}{5}{section*.15}%
+\contentsline {paragraph}{}{5}{section*.16}%
+\contentsline {paragraph}{}{5}{section*.17}%
+\contentsline {paragraph}{}{5}{section*.18}%
+\contentsline {paragraph}{}{5}{section*.19}%
+\contentsline {paragraph}{}{5}{section*.20}%
+\contentsline {paragraph}{}{6}{section*.21}%
+\contentsline {paragraph}{}{6}{section*.22}%
+\contentsline {paragraph}{}{6}{section*.23}%
+\contentsline {paragraph}{}{6}{section*.24}%
+\contentsline {subsection}{\numberline {2.3}Y-Axis}{7}{subsection.2.3}%
+\contentsline {paragraph}{}{7}{section*.25}%
+\contentsline {paragraph}{}{7}{section*.26}%
+\contentsline {paragraph}{}{7}{section*.27}%
+\contentsline {paragraph}{}{7}{section*.28}%
+\contentsline {paragraph}{}{8}{section*.29}%
+\contentsline {paragraph}{}{8}{section*.30}%
+\contentsline {paragraph}{}{8}{section*.31}%
+\contentsline {paragraph}{}{8}{section*.32}%
+\contentsline {paragraph}{}{8}{section*.33}%
+\contentsline {paragraph}{}{8}{section*.34}%
+\contentsline {paragraph}{}{8}{section*.35}%
+\contentsline {paragraph}{}{8}{section*.36}%
+\contentsline {paragraph}{}{8}{section*.37}%
+\contentsline {paragraph}{}{8}{section*.38}%
+\contentsline {paragraph}{}{8}{section*.39}%
+\contentsline {paragraph}{}{8}{section*.40}%
+\contentsline {paragraph}{}{8}{section*.41}%
+\contentsline {paragraph}{}{8}{section*.42}%
+\contentsline {paragraph}{}{9}{section*.43}%
+\contentsline {paragraph}{}{9}{section*.44}%
+\contentsline {paragraph}{}{9}{section*.45}%
+\contentsline {paragraph}{}{9}{section*.46}%
+\contentsline {paragraph}{}{9}{section*.47}%
+\contentsline {paragraph}{}{9}{section*.48}%
+\contentsline {paragraph}{}{9}{section*.49}%
+\contentsline {subsection}{\numberline {2.4}Final Leg Model}{10}{subsection.2.4}%
+\contentsline {paragraph}{}{10}{section*.50}%
+\contentsline {paragraph}{}{10}{section*.51}%
+\contentsline {paragraph}{}{10}{section*.52}%
+\contentsline {paragraph}{}{10}{section*.53}%
+\contentsline {paragraph}{}{10}{section*.54}%
+\contentsline {paragraph}{}{10}{section*.55}%
+\contentsline {paragraph}{}{10}{section*.56}%
+\contentsline {paragraph}{}{10}{section*.57}%
+\contentsline {paragraph}{}{10}{section*.58}%
+\contentsline {paragraph}{}{11}{section*.59}%
+\contentsline {section}{\numberline {3}Body Inverse Kinematics}{11}{section.3}%
+\contentsline {paragraph}{}{11}{section*.60}%
+\contentsline {subsection}{\numberline {3.1}Pitch}{11}{subsection.3.1}%
+\contentsline {paragraph}{}{11}{section*.61}%
+\contentsline {subsection}{\numberline {3.2}Yaw}{11}{subsection.3.2}%
+\contentsline {paragraph}{}{11}{section*.62}%
+\contentsline {subsection}{\numberline {3.3}Roll}{11}{subsection.3.3}%
+\contentsline {paragraph}{}{11}{section*.63}%
+\contentsline {subsection}{\numberline {3.4}Final Body Model}{11}{subsection.3.4}%
+\contentsline {paragraph}{}{11}{section*.64}%
+\contentsline {section}{\numberline {4}Outroduction}{11}{section.4}%
+\contentsline {paragraph}{}{11}{section*.65}%
+\contentsline {paragraph}{}{11}{section*.66}%
+\contentsline {section}{\numberline {5}References}{11}{section.5}%

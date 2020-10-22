@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/jetson-nano/robot_open-quadruped/catkin_ws/install/setup.sh
