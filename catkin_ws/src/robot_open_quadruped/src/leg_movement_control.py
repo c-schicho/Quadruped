@@ -46,10 +46,10 @@ if __name__ == "__main__":
             joint_angles = leg_model.get_joint_angles(x, y, z)
 
             ja = JointAngles()
-            ja.lf = joint_angles[0]
-            ja.rf = joint_angles[1]
-            ja.lr = joint_angles[2]
-            ja.rr = joint_angles[3]
+            ja.rf = joint_angles[0]
+            ja.rr = joint_angles[1]
+            ja.lf = joint_angles[2]
+            ja.lr = joint_angles[3]
 
             pub.publish(ja)
             rate.sleep()
