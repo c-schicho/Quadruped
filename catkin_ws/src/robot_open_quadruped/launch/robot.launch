@@ -1,7 +1,7 @@
 <launch>
 <param name="joy_node/dev" value="/dev/input/js0"/>
 <node pkg="joy" type="joy_node" name="joy_node"/>
-<node pkg="robot_open_quadruped" type="leg_movement_control.py" name="movement_control"/>
+<node pkg="robot_open_quadruped" type="movement_control.py" name="movement_control"/>
 <node pkg="robot_open_quadruped" type="transformation.py" name="transformation"/>
 <node pkg="robot_open_quadruped" type="leg_movement.py" name="leg_movement"/>
 </launch>
