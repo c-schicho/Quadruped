@@ -58,23 +58,23 @@ class LegIK:
 
             if y < 0:
                 # right side
-                a1, a2 = get_leg_angles(x, z1)
+                a1, a2 = self.get_leg_angles(x, z1)
                 for i in range(2):
                     joint_angles.append([a0, a1, a2])
 
                 # left side
-                a1, a2 = get_leg_angles(x, z2)
+                a1, a2 = self.get_leg_angles(x, z2)
                 for i in range(2):
                     joint_angles.append([a0, a1, a2])
 
             else:
                 # right side
-                a1, a2 = get_leg_angles(x, z2)
+                a1, a2 = self.get_leg_angles(x, z2)
                 for i in range(2):
                     joint_angles.append([a0, a1, a2])
 
                 # left side
-                a1, a2 = get_leg_angles(x, z1)
+                a1, a2 = self.get_leg_angles(x, z1)
                 for i in range(2):
                     joint_angles.append([a0, a1, a2])
 
@@ -82,3 +82,9 @@ class LegIK:
             pass
 
         return joint_angles
+
+
+
+#if __name__ == "__main__":
+#    leg = LegIK(109.868, 144.580, 11.369, 63.763)
+#    print(leg.get_joint_angles(0,0,150))
