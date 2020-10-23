@@ -12,6 +12,12 @@
 }
 \urlstyle{same}
 
+\usepackage{titlesec}
+\titlespacing*{\section}
+{0pt}{10ex plus 1ex minus .2ex}{4.3ex plus .2ex}
+\titlespacing*{\subsection}
+{0pt}{5.5ex plus 1ex minus .2ex}{4.3ex plus .2ex}
+
 \title{Inverse Kinematics for a 12 DOF Quadruped}
 \author{Christopher Schicho}
 \date{\today}
@@ -24,7 +30,7 @@
 
 
     \section{Introduction}
-    \paragraph{} %source still missing ([open-quadruped]) 
+    \paragraph{}  
     This Paper is about the inverse kinematics for a 12 DOF quadruped robot. It is based on an open source project called "open-quadruped" . Nevertheless, this paper describes the kinematic in a general way. Therefore, it is useable for other 12 DOF quadruped projects as well. 
 
     \subsection{Purpose}
@@ -34,15 +40,15 @@
 
     
     \section{3 DOF Leg Inverse Kinematics}
-    \paragraph{} %source still missing (Wikipedia[inverse kinematics])
+    \paragraph{}
     Firstly, let us define what inverse kinematics is about. The key idea of inverse kinematics is to only care about the position of the end of a kinematic chain. We do not want to care about all the variable joint parameters needed to reach this position. Therefore, we need to create a mathematical process to calculate all of these variable joint parameters. 
     \paragraph{}
     This is exactly what this section will discover. We will start with calculating every single axis and combine them to a complete leg inverse kinematics model once we are done with these single steps.
     
     
-    \pagebreak
+    %\pagebreak
     \subsection{Z-Axis}
-    \paragraph{} %picture still missing
+    \paragraph{}
     The easiest way to start is by starting with the z-axis. The z-axis is responsible for moving up and down the quadruped's body. In this step we will calculate the upper leg's and the lower leg's joint angles.
 
     \paragraph{}
@@ -52,7 +58,9 @@
     In the picutre below you can see the quadruped's leg and also the triangle we will need in order to calculate our joint parameters. Due to the Design of this model, the end of the lower leg will always be directly under the pivot of the upper leg, but note that this is only true if we only perform z-axis movements. This is a good configuration and makes calculating the angles much easier.
     
     \paragraph{}
-    \includegraphics[scale=0.2]{z-axis}
+    \begin{center}
+        \includegraphics[scale=0.2]{z-axis}
+    \end{center}
 
     \paragraph{}
     The first calculation uses cosine rule to calculate the angle $\alpha_{1.1}$, where $Z$ is the input for the z-axis, $u$ the length of the upper leg and $l$ the length of the lower leg. This calculation is only directly applied to the quadruped if you want to perform the z-axis movements without including the other axis, otherwise the value of $\alpha_1$ will be calculated in the x-axis step.
@@ -75,17 +83,19 @@
 
 
 
-    \pagebreak
+    %\pagebreak
     \subsection{X-Axis}
-    \paragraph{} %picture still missing
+    \paragraph{} 
     The next step is to calculate the x-axis calculations. This axis is responsible for moving the body back and forth. In this step we do not need any further information about the quadruped.
 
     \paragraph{}
     The picture below shows again one leg of the quadruped, however, this time it looks a litte bit different. Note that x-axis may have positive and negative values. This is slightly different compared to the the z-axis which is only positive. 
 
     \paragraph{}
-    \includegraphics[scale=0.2]{x-axis}
-
+    \begin{center}
+        \includegraphics[scale=0.2]{x-axis}
+    \end{center}
+    
     \paragraph{}
     At first we calculate the hypothenuse from our new triangle by using the Pythagoras theorem. The variables $X$ and $Z$ represent the input for these axis. we will need this length to calculated the desired angle $\alpha_1$.
 
@@ -106,19 +116,21 @@
     In this step we need to make a case distinction due to the fact that $X$ can be either positive or negative. If $X$ is negative we want to substract $\alpha_{1.2}$ from the initial angle, otherwise we want to add it. We need this step because otherwise the quadruped would only move in one direction. This angle will determine the shoulder movement later.
 
     \paragraph{}
+    \begin{center}
     $\alpha_1 = \left\{
     \begin{array}{ll}
     \alpha_{1.1} + \alpha_{1.2} & \alpha_{1.2} \ge 0 \\
     \alpha_{1.1} - \alpha_{1.2} & \alpha_{1.2} < 0
     \end{array}
     \right. $
+    \end{center}
 
     \paragraph{}
     Now we are also done with the x-axis. At this point we are able to perform movements along the z- and x-axis simultaneously.
 
 
 
-    \pagebreak
+    %\pagebreak
     \subsection{Y-Axis}
     \paragraph{} %picture still missing
     Finally we will calculate the last the parameters of the y-axis. This is rather complicated compared to the other ones. This responsible for moving the quadruped's body sidewards.
@@ -127,7 +139,9 @@
     The following picture illustrates what we will calculate in the next step. The main problem is that if we shift the body sidewards, the legs of one side of the robot get shorter and the other get longer. Therefore we need to calculate two new $Z$ values, we will call them $z_1$ and $z_2$. Indeed we will also calculate the angle $alpha_3$ which is our hip angle.
 
     \paragraph{}
+    %\begin{}
     \includegraphics[scale=0.2]{y-axis}
+    %\end{center}
 
     \paragraph{}
     In order to calculate all the desired values we some more details about the construction of the quadruped. As you can see in the picture above we 2 length of the hip joint, we will call them $off_o$ and $off_1$. $off_0$ is the vertical distance between the middle of the hip pivot and the shoulder pivot. $off_1$ is the horizontal distance between the hip pivot and the middle of the upper leg. In order to make the robot's leg standing straight we need to include the $off_1$ to our $Y_{input}$. Also keep in mind that the the y-axis can also either positive or false.
@@ -229,16 +243,17 @@
     
 
 
-    \pagebreak
+    %\pagebreak
     \subsection{Final Leg Model}
     \paragraph{}
     Due to the two different $Z$ values from the y-axis calculations, we need to replace the calculations of the x- and z-axis by the following functions. We will use this calculations additionally to the y-axis calculations. Basically we need to distinguish if we are calculating the left or the right side of the quadruped. Therefore we will introduce some new angles, namely $\alpha_{1left}$, $\alpha_{1right}$, $\alpha_{2left}$, $\alpha_{2right}$, $\alpha_{1.1left}$, $\alpha_{1.1right}$, $\alpha_{1.2left}$ and $\alpha_{1.2right}$ and some new lenghts.
 
     \paragraph{}
+    \begin{center}
     $\alpha_{1.1left} = \left\{
     \begin{array}{ll}
     \arccos \frac{u^2 + z_1^2 - l^2}{2 * u * z_1} & Y \ge 0 \\ \\
-    \arccos \frac{u^2 + z_2^2 - l^2}{2 * u * z_2} & Y < 0
+    \arccos \frac{u^2 + z_2^2 - l^2}{2 * u * z_2} & Y < 0 
     \end{array}
     \right. $ 
 
@@ -297,25 +312,26 @@
     \arccos \frac{u^2 + l^2 - z_1^2}{2 * u * l} & Y < 0
     \end{array}
     \right. $  
+    \end{center}
 
     \paragraph{}
 
 
 
-    \section{Body Inverse Kinematics}
-    \paragraph{}
+    %\section{Body Inverse Kinematics}
+    %\paragraph{}
 
-    \subsection{Pitch}
-    \paragraph{}
+    %\subsection{Pitch}
+    %\paragraph{}
 
-    \subsection{Yaw}
-    \paragraph{}
+    %\subsection{Yaw}
+    %\paragraph{}
 
-    \subsection{Roll}
-    \paragraph{}
+    %\subsection{Roll}
+    %\paragraph{}
 
-    \subsection{Final Body Model}
-    \paragraph{}
+    %\subsection{Final Body Model}
+    %\paragraph{}
 
 
 

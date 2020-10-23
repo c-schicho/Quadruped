@@ -1,3 +1,15 @@
+"""
+Author: Christopher Schicho
+Email: contact@enabling-intelligence.com
+"""
+
+"""
+This is an program designed to calculate the inverse kinematic of a quadrupedal robot. 
+It is based on this paper: https://github.com/c-schicho/robot_open-quadruped/blob/master/docs/inverse_kinematics.pdf by Christopher Schicho.
+This paper is a formal describtion of this program. 
+"""
+
+
 #!/usr/bin/env python
 
 import math
@@ -117,6 +129,12 @@ class LegIK:
         self.off1 = off1
 
 
+    def transform_cordinate_vector(self, vector):
+        for _, (x, y, z) in enumerate(vector):
+            leg_vectors = [[x, y, z], [x, y, z], [x, y, z], [x, y, z]]
+        return leg_vectors
+
+
     def get_leg_angles(self, x, z0):
         # X-Axis
         h3 = math.sqrt(x**2 + z0**2)
@@ -133,10 +151,15 @@ class LegIK:
         return a1, a2
 
 
-
-
     def get_joint_angles(self, leg_vectors):
+        """
+        args: leg_vectors (of size 4x3 or 1x3)
+        """
         joint_angles = []
+
+        if len(leg_vectors) == 1:
+            leg_vectors = self.transform_cordinate_vector(leg_vectors)
+
         try:
             for i, (x, y, z) in enumerate(leg_vectors): 
                 # Y-Axis

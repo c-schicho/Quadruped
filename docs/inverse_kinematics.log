@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.10.21)  22 OCT 2020 17:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.10.21)  22 OCT 2020 20:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -139,49 +139,60 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 \Hy@SectionHShift=\skip49
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 12.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
+\ttl@box=\box45
+\beforetitleunit=\skip50
+\aftertitleunit=\skip51
+\ttl@plus=\dimen141
+\ttl@minus=\dimen142
+\ttl@toksa=\toks16
+\titlewidth=\dimen143
+\titlewidthlast=\dimen144
+\titlewidthfirst=\dimen145
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count185
-\l__pdf_internal_box=\box45
+\l__pdf_internal_box=\box46
 ) (/Users/christopherschicho/projects/robot_open-quadruped/docs/inverse_kinematics.aux)
 \openout1 = `inverse_kinematics.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
  (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count186
-\scratchdimen=\dimen141
-\scratchbox=\box46
+\scratchdimen=\dimen146
+\scratchbox=\box47
 \nofMPsegments=\count187
 \nofMParguments=\count188
-\everyMPshowfont=\toks16
+\everyMPshowfont=\toks17
 \MPscratchCnt=\count189
-\MPscratchDim=\dimen142
+\MPscratchDim=\dimen147
 \MPnumerator=\count190
 \makeMPintoPDFobject=\count191
-\everyMPtoPDFconversion=\toks17
+\everyMPtoPDFconversion=\toks18
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-\AtBeginShipoutBox=\box47
+\AtBeginShipoutBox=\box48
  (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2019/11/23 v1.2a Standard LaTeX Color (DPC)
  (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -189,7 +200,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-Package hyperref Info: Link coloring ON on input line 19.
+Package hyperref Info: Link coloring ON on input line 25.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/local/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
@@ -199,19 +210,19 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count192
 )
-LaTeX Info: Redefining \ref on input line 19.
-LaTeX Info: Redefining \pageref on input line 19.
-LaTeX Info: Redefining \nameref on input line 19.
+LaTeX Info: Redefining \ref on input line 25.
+LaTeX Info: Redefining \pageref on input line 25.
+LaTeX Info: Redefining \nameref on input line 25.
  (/Users/christopherschicho/projects/robot_open-quadruped/docs/inverse_kinematics.out) (/Users/christopherschicho/projects/robot_open-quadruped/docs/inverse_kinematics.out)
 \@outlinefile=\write3
 \openout3 = `inverse_kinematics.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 21.
+(Font)              <12> on input line 27.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 21.
+(Font)              <8> on input line 27.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 21.
+(Font)              <6> on input line 27.
  (/Users/christopherschicho/projects/robot_open-quadruped/docs/inverse_kinematics.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 3.
@@ -224,52 +235,52 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-<./images/z-axis.png, id=93, 903.375pt x 1385.175pt>
+<./images/z-axis.png, id=63, 903.375pt x 1385.175pt>
 File: ./images/z-axis.png Graphic file (type png)
 <use ./images/z-axis.png>
-Package pdftex.def Info: ./images/z-axis.png  used on input line 55.
+Package pdftex.def Info: ./images/z-axis.png  used on input line 62.
 (pdftex.def)             Requested size: 180.6718pt x 277.03009pt.
- [3 </Users/christopherschicho/projects/robot_open-quadruped/docs/./images/z-axis.png (PNG copy)>] [4]
-<./images/x-axis.png, id=117, 903.375pt x 1385.175pt>
+ [3 </Users/christopherschicho/projects/robot_open-quadruped/docs/./images/z-axis.png (PNG copy)>]
+<./images/x-axis.png, id=73, 903.375pt x 1385.175pt>
 File: ./images/x-axis.png Graphic file (type png)
 <use ./images/x-axis.png>
-Package pdftex.def Info: ./images/x-axis.png  used on input line 87.
+Package pdftex.def Info: ./images/x-axis.png  used on input line 96.
 (pdftex.def)             Requested size: 180.6718pt x 277.03009pt.
- [5 </Users/christopherschicho/projects/robot_open-quadruped/docs/./images/x-axis.png (PNG copy)>] [6]
-<./images/y-axis.png, id=139, 2210.2575pt x 1460.45625pt>
+ [4 </Users/christopherschicho/projects/robot_open-quadruped/docs/./images/x-axis.png (PNG copy)>]
+<./images/y-axis.png, id=79, 2210.2575pt x 1460.45625pt>
 File: ./images/y-axis.png Graphic file (type png)
 <use ./images/y-axis.png>
-Package pdftex.def Info: ./images/y-axis.png  used on input line 130.
+Package pdftex.def Info: ./images/y-axis.png  used on input line 143.
 (pdftex.def)             Requested size: 442.04367pt x 292.08607pt.
 
-Overfull \hbox (107.04369pt too wide) in paragraph at lines 130--131
- [][] [] 
+Overfull \hbox (107.04369pt too wide) in paragraph at lines 143--145
+[] [][] [] 
  []
 
-[7 </Users/christopherschicho/projects/robot_open-quadruped/docs/./images/y-axis.png (PNG copy)>] [8] [9] [10]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 339.
- [11]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 339.
+[5] [6 </Users/christopherschicho/projects/robot_open-quadruped/docs/./images/y-axis.png (PNG copy)>] [7] [8]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 355.
+ [9]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 355.
  (/Users/christopherschicho/projects/robot_open-quadruped/docs/inverse_kinematics.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 339.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 339.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 355.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 355.
 Package rerunfilecheck Info: File `inverse_kinematics.out' has not changed.
-(rerunfilecheck)             Checksum: 2CE21041A95000AC574E445A7E0885B7;774.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 339.
+(rerunfilecheck)             Checksum: 0AD49EF2BEEF2A25B21AD10C7BD5EC9F;487.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 355.
  ) 
 Here is how much of TeX's memory you used:
- 5371 strings out of 480608
- 84283 string characters out of 5903629
- 347002 words of memory out of 5000000
- 21074 multiletter control sequences out of 15000+600000
+ 5573 strings out of 480608
+ 86951 string characters out of 5903629
+ 352750 words of memory out of 5000000
+ 21345 multiletter control sequences out of 15000+600000
  536593 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,9n,29p,678b,320s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,9n,31p,659b,393s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on /Users/christopherschicho/projects/robot_open-quadruped/docs/inverse_kinematics.pdf (11 pages, 245526 bytes).
+Output written on /Users/christopherschicho/projects/robot_open-quadruped/docs/inverse_kinematics.pdf (9 pages, 240854 bytes).
 PDF statistics:
- 293 PDF objects out of 1000 (max. 8388607)
- 262 compressed objects within 3 object streams
- 112 named destinations out of 1000 (max. 500000)
- 128 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 179 PDF objects out of 1000 (max. 8388607)
+ 151 compressed objects within 2 object streams
+ 39 named destinations out of 1000 (max. 500000)
+ 88 words of extra memory for PDF output out of 10000 (max. 10000000)
 

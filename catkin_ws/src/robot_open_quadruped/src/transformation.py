@@ -1,3 +1,9 @@
+"""
+Author: Christopher Schicho
+Email: contact@enabling-intelligence.com
+"""
+
+
 #!/usr/bin/env python
 
 import math, rospy
