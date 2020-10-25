@@ -46,7 +46,7 @@ if __name__ == "__main__":
             yaw = axes[1] * yaw_scale
             pitch = axes[2] * pitch_scale
 
-            joint_angles = qp_kinematics.qp_joint_angles(roll, yaw, pitch)
+            joint_angles = qp_kinematics.qp_joint_angles(roll=roll, yaw=yaw, pitch=pitch)
 
             ja = JointAngles()
             ja.rf = joint_angles[0]

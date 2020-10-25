@@ -37,14 +37,13 @@ class QPKinematics:
         self.leg_model = LegIK(self.upper, self.lower, self.off0, self.off1)
 
 
-    def qp_joint_angles(self, roll, yaw, pitch):
+    def qp_joint_angles(self, x=None, y=None, z=None, roll=None, yaw=None, pitch=None):
         """
-        args: roll, yaw, pitch
+        args: x, y, z, roll, yaw, pitch
         """
         self.body_model.initial_pose()
         leg_vectors = self.body_model.get_leg_vectors(roll, yaw, pitch)
         joint_angles = self.leg_model.get_joint_angles(leg_vectors)
-
         return joint_angles
 
 
