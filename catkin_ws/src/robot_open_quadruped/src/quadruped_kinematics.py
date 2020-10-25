@@ -41,9 +41,12 @@ class QPKinematics:
         """
         args: x, y, z, roll, yaw, pitch
         """
-        self.body_model.initial_pose()
-        leg_vectors = self.body_model.get_leg_vectors(roll, yaw, pitch)
-        joint_angles = self.leg_model.get_joint_angles(leg_vectors)
+        if roll != 0 or yaw != 0 or pitch != 0:
+            self.body_model.initial_pose()
+            leg_vectors = self.body_model.get_leg_vectors(roll, yaw, pitch)
+            joint_angles = self.leg_model.get_joint_angles(leg_vectors)
+        else:
+            joint_angles = self.leg_model.get_joint_angles([[x, y, z]])
         return joint_angles
 
 
