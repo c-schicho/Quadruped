@@ -4,7 +4,7 @@ In this section I provide my custom 3D .stl files for the open-quadruped project
 In the folder "custom_parts" you will find the following parts:
 
 ## Custom Front Cover
-I adopt the design of the original file in order to be able to mount an intel realsense t265 and a d415. This design allows you to mount both cameras simultaneously. Also I added a whole on the side for the usb cables.
+I adopted the design of the original file in order to be able to mount an intel realsense t265 and a d415. This design allows you to mount both cameras simultaneously. Also I added a whole on the side for the usb cables.
 
 ## Custome Rear Cover
 I added a hole for a power switch.  
