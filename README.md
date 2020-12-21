@@ -7,7 +7,7 @@ The purpose of this project is to develop the entire software for this quadruped
 Additionally I will try to document my thoughts and the whole progress in order to make it accessible to others. 
 
 
-# Planed Features
+# Planned Features
 
 - [ ] Finish the inverse kinematic documentation
 - [ ] Finish the simulation in gazebo
